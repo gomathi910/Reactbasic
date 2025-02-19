@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import RefForm from './RefForm'
 import Compount from './Compount'
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
         <p>cotton kurti </p>
         <button >Add To Card</button>
       </div> */}
+<RefForm/>
+
 <Compount/>
     </div>
     </>
