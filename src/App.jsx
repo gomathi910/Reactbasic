@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import RefForm from './RefForm'
+import Compount from './Compount'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
       </div> */}
 <RefForm/>
 
+<Compount/>
     </div>
     </>
   )
