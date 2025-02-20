@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from './NavBar'
+import RefForm from './RefForm'
+import Compount from './Compount'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,10 +18,13 @@ function App() {
         <p className='price'>Rs.800</p>
         <p>cotton kurti </p>
         <button >Add To Card</button>
-      </div>
+      </div> */}
+<RefForm/>
 
-    </div> */}
+    
     <NavBar/>
+<Compount/>
+    
     </>
   )
 }
