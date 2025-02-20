@@ -1,0 +1,10 @@
+body {
+    background-color: yellow;
+    color: brown;
+
+}
+
+body.dark-mode {
+    background-color: blue;
+    color: pink;
+}
