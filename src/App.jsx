@@ -1,42 +1,50 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import CreateContect from './CreateContect'
+import './App.css';
+// import CreateContect from './CreateContect';
+// import { useEffect } from 'react';
+import NavBar from './componenets/NavBar';
+ import Home from './pages/Home';
+ import About from './pages/About';
+ import Contact from './pages/Contact';
+ import NotFound from './pages/NotFound';
+import { Routes,Route } from 'react-router-dom';
 
 
 
+ function App() {
+//  const {DarkMode} = ("useTheme")
 
-function App() {
- const {DarkMode} = useTheme()
-  useEffect(() => {
-    if(DarkMode) {
-      document.body.classList.add('dark-mode');
-    }
-    else{
-      document.body.classList.remove('dark-mode')
-    }
-  },[DarkMode])
+//   useEffect(() => {
+//     if(DarkMode) {
+//       document.body.classList.add('dark-mode');
+//     }
+//     else{
+//       document.body.classList.remove('dark-mode')
+//     }
+//   },[DarkMode])
 
-  return (
+   return (
     <>
-    {/* <div>
-      <div className='card'>
-        <img src="https://i.pinimg.com/736x/d7/52/f8/d752f8585e87ca2ade9501989583cb2c.jpg" alt="kurti" />
-        <h1>kurti</h1>
-        <p className='price'>Rs.800</p>
-        <p>cotton kurti </p>
-        <button >Add To Card</button>
-      </div> */}
- <CreateContect/>
+{/* //     <CreateContect/>
       <div className="App">
-    <h1>Welcome to the Light/Dark Mode App</h1>
+     <h1>Welcome to the Light/Dark Mode App</h1>
       </div>
-  <CreateContect/>
+  <CreateContect/> */}
  
+ <NavBar></NavBar> 
+  
+   <Routes>
+     <Route path ="/home" element = {<Home/>}></Route>
+      <Route path ="/about" element = {<About/>}></Route>
+      <Route path ="/contact" element = {<Contact/>}></Route>
+      <Route path ='*' element = {<NotFound/>}></Route>
+    </Routes>
     
+
     </>
-  )
+  );
 }
 
 export default App
+
+
+

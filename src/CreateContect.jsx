@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState} from 'react'
-import ThemeToggle from './ThemeToggle';
+
 
 
 const ThemeToggle = createContext();
@@ -19,7 +19,7 @@ return savedTheme ? JSON.parse(savedTheme) :false;
  
     return (
     <div>
-  <ThemeToggle value ={{DarkMode,toggleTheme}}>
+     <ThemeToggle value ={{DarkMode,toggleTheme}}>
       {children}
       </ThemeToggle>
     </div>

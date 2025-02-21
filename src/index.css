@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: yellow;
     color: brown;
 
@@ -7,4 +7,29 @@ body {
 body.dark-mode {
     background-color: blue;
     color: pink;
+} */
+
+.navbar {
+    background-color: aqua;
+    height: 70px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    
+}
+.navbar ul {
+    padding:  30px;
+    
+}
+.navbar ul li {
+
+    display: flex;
+   display: inline;
+  padding: 10px;  
+    font-size: 30px;
+    text-decoration: none;
+}
+.logo{
+    font-size: 30px;
+    margin-right:60%;
 }
