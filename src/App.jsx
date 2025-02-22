@@ -1,13 +1,20 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
-import NavBar from './NavBar'
-import RefForm from './RefForm'
-import Compount from './Compount'
+// import NavBar from './NavBar'
+// import RefForm from './RefForm'
+// import Compount from './Compount'
+
+import {  Routes, Route, Router } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+
+import NavBar from './componenets/NavBar';
+import { Provider } from './Provider';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [userData, setUserData] = useState(null)
 
   return (
     <>
@@ -19,12 +26,18 @@ function App() {
         <p>cotton kurti </p>
         <button >Add To Card</button>
       </div> */}
-<RefForm/>
+{/* <RefForm/>
 
     
     <NavBar/>
-<Compount/>
-    
+<Compount/> */}
+
+<NavBar></NavBar>
+<Routes>
+        <Route path="/" element={<Home setUserData = {setUserData}/>} />
+        <Route path="/about" element={<About userData = {userData} />} />
+      </Routes>
+      
     </>
   )
 }
