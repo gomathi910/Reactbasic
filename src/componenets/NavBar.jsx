@@ -3,7 +3,7 @@
 
 // function NavBar() {
 //   return (
-//  <div className="navbar">
+// <div className="navbar">
 // <div className="logo">gomathi tamtree</div>
 //     <ul>
 //       <NavLink to="/home">
@@ -15,9 +15,10 @@
 //       <NavLink to="/">
 //       <li>Contact</li>
 //       </NavLink>
-// </ul> 
+// </ul>
  
-//  </div>
+// </div>
+ 
 //   )
 // }
 

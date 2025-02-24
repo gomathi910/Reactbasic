@@ -14,12 +14,54 @@ import NavBar from './componenets/NavBar';
 // import { Provider } from './Provider';
 import AxiosHome from './pages/AxiosHome';
 import AxiosAbout from './pages/AxiosAbout';
+import './App.css';
+// import CreateContect from './CreateContect';
+// import { useEffect } from 'react';
+import NavBar from './componenets/NavBar';
+import { Provider } from './Provider';
+import AxiosHome from './axios/AxiosHome';
+import AxiosAbout from './axios/AxiosAbout';
+ import Home from './pages/Home';
+ import About from './pages/About';
+ import Contact from './pages/Contact';
+ import NotFound from './pages/NotFound';
+import { Routes,Route } from 'react-router-dom';
+import { useState } from 'react';
 
-function App() {
+
+
+ function App() {
   const [userData, setUserData] = useState(null)
 
-  return (
+//  const {DarkMode} = ("useTheme")
+
+//   useEffect(() => {
+//     if(DarkMode) {
+//       document.body.classList.add('dark-mode');
+//     }
+//     else{
+//       document.body.classList.remove('dark-mode')
+//     }
+//   },[DarkMode])
+
+   return (
     <>
+{/* //     <CreateContect/>
+      <div className="App">
+     <h1>Welcome to the Light/Dark Mode App</h1>
+      </div>
+  <CreateContect/> */}
+ 
+ {/* <NavBar></NavBar> 
+  
+   <Routes>
+     <Route path ="/home" element = {<Home/>}></Route>
+      <Route path ="/about" element = {<About/>}></Route>
+      <Route path ="/contact" element = {<Contact/>}></Route>
+      <Route path ='*' element = {<NotFound/>}></Route>
+    </Routes> */}
+    
+
     {/* <div>
       <div className='card'>
         <img src="https://i.pinimg.com/736x/d7/52/f8/d752f8585e87ca2ade9501989583cb2c.jpg" alt="kurti" />
@@ -41,10 +83,16 @@ function App() {
 
        <Route path='/' element = {<AxiosHome/>}></Route>
        <Route path='/about' element = {<AxiosAbout/>}></Route>
+                <Route path="/" element={<AxiosHome/>} />
+         <Route path="/about" element={<AxiosAbout/>} />
+
       </Routes>
       
     </>
-  )
+  );
 }
 
 export default App
+
+
+
