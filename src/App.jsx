@@ -6,12 +6,14 @@ import './App.css'
 // import RefForm from './RefForm'
 // import Compount from './Compount'
 
-import {  Routes, Route, Router } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
+import {  Routes, Route } from 'react-router-dom';
+// import Home from './pages/Home';
+// import About from './pages/About';
 
 import NavBar from './componenets/NavBar';
-import { Provider } from './Provider';
+// import { Provider } from './Provider';
+import AxiosHome from './pages/AxiosHome';
+import AxiosAbout from './pages/AxiosAbout';
 
 function App() {
   const [userData, setUserData] = useState(null)
@@ -34,8 +36,11 @@ function App() {
 
 <NavBar></NavBar>
 <Routes>
-        <Route path="/" element={<Home setUserData = {setUserData}/>} />
-        <Route path="/about" element={<About userData = {userData} />} />
+        {/* <Route path="/" element={<Home setUserData = {setUserData}/>} />
+        <Route path="/about" element={<About userData = {userData} />} /> */}
+
+       <Route path='/' element = {<AxiosHome/>}></Route>
+       <Route path='/about' element = {<AxiosAbout/>}></Route>
       </Routes>
       
     </>
