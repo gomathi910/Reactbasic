@@ -7,10 +7,13 @@ import NavBar from './componenets/NavBar';
  import Contact from './pages/Contact';
  import NotFound from './pages/NotFound';
 import { Routes,Route } from 'react-router-dom';
+import { useState } from 'react';
 
 
 
  function App() {
+  const [userData, setUserData] = useState(null)
+
 //  const {DarkMode} = ("useTheme")
 
 //   useEffect(() => {
