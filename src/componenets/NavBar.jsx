@@ -18,11 +18,30 @@ function NavBar() {
 </ul>
  
 </div>
+ 
   )
 }
 
 export default NavBar
 
+
+
+
+
+
+// import React from 'react'
+// import { Link } from 'react-router-dom'
+// function NavBar() {
+//   return (
+//     <div>
+//       <nav className='navbar'>
+//   <Link to="/"><strong>Home</strong></Link> | <Link to="/about"><strong>About</strong></Link>
+//         </nav>
+//     </div>
+//   )
+// }
+
+// export default NavBar
 
 
 

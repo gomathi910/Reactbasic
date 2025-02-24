@@ -59,3 +59,28 @@
 // // }
 // // const RefFormWithExtraProps = withExtraprops(RefForm)
 // // export default RefForm
+
+import React from 'react'
+
+function withExtraprops ({WrappedComponent})  {
+    return () => {
+        const extraProps = {
+            extraData : 'this is some extra data!'
+        };
+        return<WrappedComponent {...props} {...extraProps}/>
+    }
+}
+function RefForm({extraData}) {
+  return (
+    <div>
+      <h1>Hello,HOC!</h1>
+      <p>{extraData}</p>
+      
+    </div>
+  )
+}
+const RefFormWithExtraProps = withExtraprops(RefForm)
+export default RefForm
+
+
+

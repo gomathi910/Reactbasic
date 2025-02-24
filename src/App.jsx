@@ -30,16 +30,36 @@ import { Routes,Route } from 'react-router-dom';
       </div>
   <CreateContect/> */}
  
- <NavBar></NavBar> 
+ {/* <NavBar></NavBar> 
   
    <Routes>
      <Route path ="/home" element = {<Home/>}></Route>
       <Route path ="/about" element = {<About/>}></Route>
       <Route path ="/contact" element = {<Contact/>}></Route>
       <Route path ='*' element = {<NotFound/>}></Route>
-    </Routes>
+    </Routes> */}
     
 
+    {/* <div>
+      <div className='card'>
+        <img src="https://i.pinimg.com/736x/d7/52/f8/d752f8585e87ca2ade9501989583cb2c.jpg" alt="kurti" />
+        <h1>kurti</h1>
+        <p className='price'>Rs.800</p>
+        <p>cotton kurti </p>
+        <button >Add To Card</button>
+      </div> */}
+{/* <RefForm/>
+
+    
+    <NavBar/>
+<Compount/> */}
+
+<NavBar></NavBar>
+<Routes>
+        <Route path="/" element={<Home setUserData = {setUserData}/>} />
+        <Route path="/about" element={<About userData = {userData} />} />
+      </Routes>
+      
     </>
   );
 }
