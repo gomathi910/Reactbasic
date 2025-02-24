@@ -12,6 +12,8 @@ import About from './pages/About';
 
 import NavBar from './componenets/NavBar';
 import { Provider } from './Provider';
+import AxiosHome from './axios/AxiosHome';
+import AxiosAbout from './axios/AxiosAbout';
 
 function App() {
   const [userData, setUserData] = useState(null)
@@ -34,8 +36,11 @@ function App() {
 
 <NavBar></NavBar>
 <Routes>
-        <Route path="/" element={<Home setUserData = {setUserData}/>} />
-        <Route path="/about" element={<About userData = {userData} />} />
+        {/* <Route path="/" element={<Home setUserData = {setUserData}/>} />
+        <Route path="/about" element={<About userData = {userData} />} /> */}
+                <Route path="/" element={<AxiosHome/>} />
+         <Route path="/about" element={<AxiosAbout/>} />
+
       </Routes>
       
     </>
